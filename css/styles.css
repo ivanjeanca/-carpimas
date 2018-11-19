@@ -1,0 +1,136 @@
+.bg-dark-half {
+	background-color: rgba(0,0,0,.8);
+}
+.separador-100 {
+	margin-top: 100px;
+}
+.separador-50 {
+	margin-top: 50px;
+}
+.separador-25 {
+	margin-top: 25px;
+}
+.fondo-beige {
+	background-color: rgba(239,206,177,1);
+}
+.fondo-cafe {
+	background-color: rgba(168,107,53,1);
+}
+.fondo-crema {
+	background-color: rgba(247,231,217,1);
+}
+.fondo-gris-claro {
+	background-color: rgba(232,232,232,1);
+}
+.fondo-cafe-oscuro {
+	background: rgba(76,38,3,1);
+}
+.fondo-negro {
+	background-color: rgba(0,0,0,.9);
+	color: white;
+}
+.sombra {
+	margin-top: 15px;
+    box-shadow: 5px 10px 18px rgba(0,0,0,.6);
+}
+.margin-top-15{
+	margin-top: 15px;
+}
+.margin-bottom-50{
+	margin-bottom: 50px;
+}
+.padding-bottom-50{
+	padding-bottom: 50px;
+}
+.text-decoration-none{
+	text-decoration: none;
+}
+.carousel-button-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 400px;
+    text-align: center;
+}
+.text-color-a {
+	color: #007bff;
+}
+.titulo-tarjeta{
+	font-size: 40px;
+}
+.border-radius-0{
+	border-radius: 0;
+}
+.pie{
+
+}
+.pie:hover{
+	background-color: rgba(232,232,232,1);
+}
+.td-none{
+	text-decoration: none;
+}
+.max-alt-100{
+	max-height: 100px;
+}
+#twitter{
+	background: url('../images/social-b.png') no-repeat -1px -3px;
+	width: 30px;
+	height: 30px;
+}
+
+#twitter:hover{
+	background: url('../images/social-b.png') no-repeat -1px -343px;
+	width: 30px;
+	height: 30px;	
+}
+
+#facebook{
+	background: url('../images/social-b.png') no-repeat -52px -1px;
+	width: 30px;
+	height: 30px;
+}
+
+#facebook:hover{
+	background: url('../images/social-b.png') no-repeat -52px -341px;
+	width: 30px;
+	height: 30px;	
+}
+
+#youtube{
+	background: url('../images/social-b.png') no-repeat -5px -150px;
+	width: 30px;
+	height: 30px;
+}
+
+#youtube:hover{
+	background: url('../images/social-b.png') no-repeat -5px -489px;
+	width: 30px;
+	height: 30px;	
+}
+
+#google-plus{
+	background: url('../images/social-b.png') no-repeat -103px -0px;
+	width: 30px;
+	height: 30px;
+}
+
+#google-plus:hover{
+	background: url('../images/social-b.png') no-repeat -103px -340px;
+	width: 30px;
+	height: 30px;	
+}
+
+#pinterest{
+	background: url('../images/social-b.png') no-repeat -201px -1px;
+	width: 30px;
+	height: 30px;
+}
+
+#pinterest:hover{
+	background: url('../images/social-b.png') no-repeat -201px -341px;
+	width: 30px;
+	height: 30px;	
+}

@@ -1,5 +1,8 @@
 <?php 
-include('header.php'); 
+include('header.php');
+$web->validarRol(array("Administrador"));
+$web->validarPermiso(array("CRUD")); 
+
 $color = $web->obtenerColor();
 ?>
 <h1 class="display-4">Color</h1>

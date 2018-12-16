@@ -1,5 +1,12 @@
 <?php
 	include('../core/carpimas.class.php');
+
+	$sesion_nav = "";
+	if(is_null($_SESSION['email']))
+		$sesion_nav = "<a class=\"nav-link lead\" href=\"login.php\">Iniciar sesión</a>";
+	else
+		$sesion_nav = "<a class=\"nav-link lead\" href=\"logout.php\" title=\"Sesión actual\">".$_SESSION['email']."</a>";
+
 	$web = new Carpimas;
 	$web->Conexion();
 ?>
@@ -17,12 +24,12 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 
-	<title>CarpiMás</title>
+	<title>CarpiMás - Administrador</title>
 </head>
 
 <body>
-<nav class="sticky-top py-1 navbar navbar-expand-lg navbar-dark bg-dark-half"> <!-- Barra de navegacion -->
-	<a class="navbar-brand" href="../index.php">
+<nav class="sticky-top py-1 navbar navbar-expand-lg navbar-dark bg-dark-half bg-red-half"> <!-- Barra de navegacion -->
+	<a class="navbar-brand" href="index.php">
 		<img src="../images/Carpimas-Logo.png" height="30" class="d-inline-block align-top" alt="Logo Carpimas">
 	</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,8 +46,6 @@
 					<a class="dropdown-item" href="material.php">Material</a>
 					<a class="dropdown-item" href="tipo_producto.php">Tipo de producto</a>
 					<a class="dropdown-item" href="color.php">Color</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="promociones.php">Promociones</a>
 				</div>
 			</li>
 			<li class="nav-item dropdown">
@@ -48,7 +53,9 @@
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="pais.php">Pais</a>
 					<a class="dropdown-item" href="estado.php">Estado</a>
-					<a class="dropdown-item" href="coudad.php">Ciudad</a>
+					<a class="dropdown-item" href="ciudad.php">Ciudad</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="usuarios.php">Usuarios/Administradores</a>
 				</div>
 			</li>
 			<li class="nav-item dropdown">
@@ -59,5 +66,12 @@
 				</div>
 			</li>
 		</ul>
+		<span class="navbar-text">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item" style="margin-right:25px;">
+					<?php echo $sesion_nav; ?>
+				</li>
+			</ul>
+		</span>
 	</div>
 </nav>

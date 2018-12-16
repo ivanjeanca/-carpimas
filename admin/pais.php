@@ -1,5 +1,8 @@
 <?php 
-include('header.php'); 
+include('header.php');
+$web->validarRol(array("Administrador"));
+$web->validarPermiso(array("CRUD")); 
+
 $pais = $web->obtenerPais();
 ?>
 

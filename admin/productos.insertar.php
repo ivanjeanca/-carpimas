@@ -1,5 +1,8 @@
 <?php 
 include('header.php');
+$web->validarRol(array("Administrador"));
+$web->validarPermiso(array("CRUD"));
+
 if(isset($_POST['enviar'])){
 	$foto = $_FILES['foto']['name'];
 	$foto_size = $_FILES['foto']['size'];

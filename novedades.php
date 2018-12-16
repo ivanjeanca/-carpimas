@@ -11,18 +11,14 @@ $productos = $web->obtenerNovedades();
 			<p class="lead">Los trabajos y noticias más recientes.</p>
 		</div>
 	</div>
-	
 	<div class="separador-25"></div>
-
 	<div class="jumbotron jumbotron-fluid fondo-negro">
 		<div class="container text-center">
 			<h1 class="display-4">¡Expandimos nuestro mercado!</h1>
 			<p class="lead font-weight-normal text-justify">Ahora realizamos entregas a todo Guanajuato y Querétaro, no te quedes con las ganas de contratar nuestros servicios.</p>
 		</div>
 	</div>
-
 	<div class="separador-25"></div>
-
 	<div class="container-fluid">
 		<div class="card-columns">
 			<?php for ($i=0; $i < count($productos); $i++) {
@@ -37,10 +33,9 @@ $productos = $web->obtenerNovedades();
 				</div>
 				<div class=\"\">
 					<!-- Button trigger modal -->
-					<button type=\"button\" class=\"btn btn-outline-dark btn-lg btn-block\" data-toggle=\"modal\" data-target=\"#modal".($i + 1)."\">
+					<button type=\"button\" class=\"btn btn-outline-dark btn-block\" data-toggle=\"modal\" data-target=\"#modal".($i + 1)."\">
 						Ver Especificaciones >
 					</button>
-
 					<!-- Modal -->
 					<div class=\"modal fade\" id=\"modal".($i + 1)."\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"titulomodal".($i + 1)."\" aria-hidden=\"true\">
 						<div class=\"modal-dialog modal-dialog-centered modal-lg\" role=\"document\">
@@ -93,7 +88,9 @@ $productos = $web->obtenerNovedades();
 								</div>
 								<div class=\"modal-footer\">
 									<button type=\"button\" class=\"btn btn-dark\" data-dismiss=\"modal\">Cerrar</button>
-									<button type=\"button\" class=\"btn btn-success\" data-dismiss=\"modal\">Agregar al carrito</button>
+									<form method=\"post\" action=\"carrito.php?sku=".$productos[$i]['id_producto']."\">
+										<input type=\"submit\" class=\"btn btn-success\" value=\"Agregar al carrito\"/>		
+									</form>
 								</div>
 							</div>
 						</div>

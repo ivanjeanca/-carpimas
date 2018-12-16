@@ -1,5 +1,8 @@
 <?php 
-include ('header.php'); 
+include('header.php'); 
+$web->validarRol(array("Administrador"));
+$web->validarPermiso(array("CRUD"));
+
 if(isset($_POST['enviar'])){
    	$tipo_producto = $_POST['tipo_producto'];
    	$statement = $web->db->prepare("insert into tipo_producto (tipo_prod) values (:tipo_producto)");

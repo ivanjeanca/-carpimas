@@ -1,5 +1,7 @@
 <?php
 include('header.php');
+$web->validarRol(array("Administrador"));
+$web->validarPermiso(array("CRUD"));
 
 if(isset($_GET['id_tipo_prod'])){
 	$id_tipo_prod = $_GET['id_tipo_prod'];

@@ -1,5 +1,8 @@
 <?php 
-include ('header.php'); 
+include('header.php'); 
+$web->validarRol(array("Administrador"));
+$web->validarPermiso(array("CRUD"));
+
 if(isset($_POST['enviar'])){
    	$tipo_pago = $_POST['tipo_pago'];
    	$statement = $web->db->prepare("insert into tipo_pago (tipo_pago) values (:tipo_pago)");

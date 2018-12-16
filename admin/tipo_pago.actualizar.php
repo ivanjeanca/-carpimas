@@ -1,5 +1,8 @@
 <?php
 include('header.php');
+$web->validarRol(array("Administrador"));
+$web->validarPermiso(array("CRUD"));
+
 if(isset($_GET['id_tipo_pago'])){
 	$id_tipo_pago = $_GET['id_tipo_pago'];
 	if(is_numeric($id_tipo_pago)){

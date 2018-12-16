@@ -1,5 +1,7 @@
 <?php
 include('header.php');
+$web->validarRol(array("Administrador"));
+$web->validarPermiso(array("CRUD"));
 
 if(isset($_GET['id_pais'])){
 	$id_pais = $_GET['id_pais'];

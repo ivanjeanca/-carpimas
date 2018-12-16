@@ -1,5 +1,8 @@
 <?php
 include('header.php');
+$web->validarRol(array("Administrador"));
+$web->validarPermiso(array("CRUD"));
+
 if(isset($_GET['id_envio'])){
 	$id_envio = $_GET['id_envio'];
 	if(is_numeric($id_envio)){

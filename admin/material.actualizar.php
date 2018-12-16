@@ -1,5 +1,8 @@
 <?php
 include('header.php');
+$web->validarRol(array("Administrador"));
+$web->validarPermiso(array("CRUD"));
+
 if(isset($_GET['id_material'])){
 	$id_material = $_GET['id_material'];
 	if(is_numeric($id_material)){

@@ -1,5 +1,4 @@
 <?php include('header.php'); ?>
-
 <section>
 	<div class="card bg-dark text-white text-center">
 		<img class="card-img" src="images/banner.jpg" alt="Card image">
@@ -8,9 +7,7 @@
 			<p class="lead">Averigua la información <em>acerca de nosotros</em>.</p>
 		</div>
 	</div>
-	
 	<div class="separador-25"></div>
-
 	<div class="container-fluid">
 		<div class="row">
 			<div id="list-example" class="list-group col-md-2">
@@ -19,7 +16,6 @@
 				<a class="list-group-item list-group-item-action" href="#list-item-3">Visión</a>
 				<a class="list-group-item list-group-item-action" href="#list-item-4">Valores</a>
 			</div>
-
 			<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example col-md-10 jumbotron">
 				<h4 id="list-item-1" class="display-4 text-center">¿Qué es CarpiMás?</h4>
 				<hr class="my-1">
@@ -54,5 +50,4 @@
 	</div>
 	<div class="separador-25"></div>
 </section>
-
 <<?php include('footer.php'); ?>

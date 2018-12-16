@@ -8,9 +8,7 @@
 			<p class="lead">¡No te pierdas! Aquí la información detallada de como puedes encontrarnos.</p>
 		</div>
 	</div>
-	
 	<div class="separador-25"></div>
-
 	<div class="container-fluid">
 		<div class="row">
 			<div class="jumbotron col-md-12">
@@ -35,11 +33,9 @@
 					</ul>
 				</div>
 				</div>
-				
 			</div> <!-- Jumbotron -->
 		</div>
 	</div>
 	<div class="separador-25"></div>
 </section>
-
 <<?php include('footer.php'); ?>

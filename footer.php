@@ -5,18 +5,18 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<ul class="list-unstyled">
-						<li><a href="quienes-somos.php" class="td-none"><strong>Qui&eacute;nes somos</strong></a></li>
-						<li><a href="ubicacion.php" class="td-none"><strong>Ubicación</strong></a></li>
-						<li><a href="legal.php" class="td-none"><strong>Información Legal</strong></a></li>
-						<li><a href="novedades.php" class="td-none"><strong>Novedades</strong></a></li>
+						<li><a href="quienes-somos.php" class="td-none fuente-footer"><strong>Qui&eacute;nes somos</strong></a></li>
+						<li><a href="ubicacion.php" class="td-none fuente-footer"><strong>Ubicación</strong></a></li>
+						<li><a href="legal.php" class="td-none fuente-footer"><strong>Información Legal</strong></a></li>
+						<li><a href="novedades.php" class="td-none fuente-footer"><strong>Novedades</strong></a></li>
 					</ul>
 				</div>
 				<div class="col-sm-6">
 					<ul class="list-unstyled">
-						<li><a href="cocinas.php" class="td-none"><strong>Cocinas</strong></a></li>
-						<li><a href="closets.php" class="td-none"><strong>Closets</strong></a></li>
-						<li><a href="puertas.php" class="td-none"><strong>Puertas</strong></a></li>
-						<li><a href="trabajos-personalizados.php" class="td-none"><strong>Trabajos Personalizados</strong></a></li>
+						<li><a href="cocinas.php" class="td-none fuente-footer"><strong>Cocinas</strong></a></li>
+						<li><a href="closets.php" class="td-none fuente-footer"><strong>Closets</strong></a></li>
+						<li><a href="puertas.php" class="td-none fuente-footer"><strong>Puertas</strong></a></li>
+						<li><a href="trabajos-personalizados.php" class="td-none fuente-footer"><strong>Trabajos Personalizados</strong></a></li>
 					</ul>
 				</div>
 			</div>
@@ -24,9 +24,9 @@
 		<div class="col-md-4 text-decoration-none pie">
 			<h2>Contacto</h2>
 			<ul class="list-unstyled">
-				<li class="text-color-a"><strong>WhatsApp:</strong> 443-245-5820</li>
-				<li class="text-color-a"><strong>Teléfono:</strong> (466)6-63-07-31</li>
-				<li class="text-color-a"><strong>Correo electrónico:</strong> <a href="mailto:carpinteria-ruben@hotmail.com">carpinteria-ruben@hotmail.com</a></li>
+				<li class="text-color-a fuente-footer"><strong>WhatsApp:</strong> 443-245-5820</li>
+				<li class="text-color-a fuente-footer"><strong>Teléfono:</strong> (466)6-63-07-31</li>
+				<li class="text-color-a fuente-footer"><a href="mailto:carpinteria-ruben@hotmail.com" class="fuente-footer"><strong>Correo electrónico:</strong> carpinteria-ruben@hotmail.com</a></li>
 			</ul>
 		</div>
 		<div class="col-md-4 pie">

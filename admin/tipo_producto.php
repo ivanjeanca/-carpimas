@@ -1,5 +1,8 @@
 <?php 
 include('header.php'); 
+$web->validarRol(array("Administrador"));
+$web->validarPermiso(array("CRUD"));
+
 $tipo_producto = $web->obtenerTipoProducto();
 ?>
 

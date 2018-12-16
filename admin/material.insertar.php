@@ -1,5 +1,8 @@
 <?php 
-include ('header.php'); 
+include('header.php'); 
+$web->validarRol(array("Administrador"));
+$web->validarPermiso(array("CRUD"));
+
 if(isset($_POST['enviar'])){
    	$material = $_POST['material'];
    	$statement = $web->db->prepare("insert into material (material) values (:material)");

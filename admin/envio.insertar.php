@@ -1,5 +1,8 @@
 <?php 
-include ('header.php'); 
+include('header.php'); 
+$web->validarRol(array("Administrador"));
+$web->validarPermiso(array("CRUD"));
+
 if(isset($_POST['enviar'])){
    	$envio = $_POST['envio'];
    	$statement = $web->db->prepare("insert into envio (envio) values (:envio)");

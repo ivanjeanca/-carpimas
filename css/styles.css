@@ -1,6 +1,9 @@
 .bg-dark-half {
 	background-color: rgba(0,0,0,.8);
 }
+.bg-red-half {
+	background-color: rgba(206, 0, 0, 0.8);
+}
 .separador-100 {
 	margin-top: 100px;
 }
@@ -64,17 +67,34 @@
 	border-radius: 0;
 }
 .pie{
-
+	padding: 25px;
+	background-color: rgb(255, 225, 225);
 }
 .pie:hover{
-	background-color: rgba(232,232,232,1);
+	background-color: rgb(255, 239, 240);
 }
 .td-none{
+	text-decoration: none;
+}
+.fuente-footer{
+	color: rgb(77, 77, 77);
+}
+.fuente-footer:hover{
+	color: rgb(145, 0, 0);
 	text-decoration: none;
 }
 .max-alt-100{
 	max-height: 100px;
 }
+.card-columns {
+	@include media-breakpoint-only(lg) {
+	  column-count: 5;
+	}
+}
+form.hide-submit input[type="submit"] { 
+	display: none;
+}
+
 #twitter{
 	background: url('../images/social-b.png') no-repeat -1px -3px;
 	width: 30px;

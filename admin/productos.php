@@ -1,6 +1,9 @@
 <?php	
-	include ('header.php');
-	$productos = $web->obtenerAllProductos();
+include('header.php');
+$web->validarRol(array("Administrador"));
+$web->validarPermiso(array("CRUD"));
+
+$productos = $web->obtenerAllProductos();
 ?>
 
 <h1 class="display-4">Productos</h1>
